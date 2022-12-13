@@ -1,0 +1,18 @@
+Ödev içinde yorum satırları eklendi lakin karışık olabilmesi ihtimaline karşı bu dosya hazırlandı.
+3. ödev çerçevesinde şu işlemler gerçekleştirildi:
+ -- UserDao ve RealtyDao sınıfları UserDaoSingleton ve RealtyDaoSingleton olarak değiştirildi.
+    Bu sınıfların içerisinde oluşturulan bir instance geriye return edildi. Ayrıca bu sınıfların
+    constructor'ları da private yapıldı. Böylece her seferinde New işlemi ile yeni nesne oluşturulmadı
+    hem de bu sınıflardan başka nesneler oluşturulması engellendi.
+
+ -- Factory Design'ın uygulanması işlemi Message üzerinden gerçekleşti. Bu işlem yapılırken şu şekilde düşünüldü:
+    Message title'ı yerine Message type'ı şeklinde bir field oluşturuldu. Kullanıcı mesaj konusunu kendisi 
+    yazmayacak, belirlenen tiplerden birisini seçerek mesaj içeriğini yansıtan başlığı en yalın hali ile karşı tarafa iletecek.
+    
+    Bu doğrultuda emlakcepte/model dizininde bir messageType paketi oluşturuldu. İçerisindeki sınıf ve interface'ler şu şekilde
+    işlem görmektedir:
+    -> MessageType - interface: Mesaj tiplerimizin implement edeceği interface
+    -> Bargain,Other,Urgent,Warn Message - class: Bu sınıflar mesaj tiplerimize uygun String içerikler return edecek
+    -> MessageTypeFactory - class: Yukarıda belirtilen mesaj tiplerinin üretim yeri olarak düşünülebilir. 
+       Mesaj tipleri için tek tek class'lardan instance oluşturmaya gerek kalmadan tek bir instance ile farklı tipte
+       mesaj başlığı verilebilecek.

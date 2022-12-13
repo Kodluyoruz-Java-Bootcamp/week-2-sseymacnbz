@@ -1,0 +1,21 @@
+ emlakcepte uygulaması halihazırda karışık olduğundan inceleyecek kişinin kaybolmaması
+ için yaptıklarımı buraya da ekliyorum. Direkt o classlara gidip kontrol edebilirsiniz
+
+ => Şehir ve ilçe bazlı arama için Realty Service içine getByDistrict() metodu eklendi.
+    Bu metod aldığı user, il ve ilçe ile arama yapıyor
+
+ => getByDistrict metodu içindeki loggingService ile arama kayıtları tutuluyor. Bu doğrultuda
+    bir Logging modeli ve Logging dao'su da oluşturuldu. Logging den log nesnesi oluşturulup
+    LoggingService ve LoggingDao ile de logların kaydı gerçekleştirilir. Logların gösterimi
+    yine LoggingService içindeki metodlar gerçekleştirilir.
+
+ => RealtyService içindeki createRealty() metoduna eklenen koşul ile kullanıcıların ilan 
+    yayınları sınırlandırıldı.
+
+ => RealtyService içindeki getShowcase() metodu vitrini görüntülememizi sağlar. Bu metod RealtyDao'nun
+    içindeki getShowcase() metodunu çağırır. Buradaki metod ise vitrin oluşturmak için önce realtyList'i 
+    karıştırır ve ardından 10 ilanlık bir subList oluşturur. Bunu da ekrana bastırır.
+
+ => İstanbul, Ankara ve İzmir ilanlarını bulmak için kendisine verilen şehrin ilan sayısını bulup print eden
+    getSizeOfRealtyByProvince() metodu RealtyService içerisinde oluşturuldu
+    

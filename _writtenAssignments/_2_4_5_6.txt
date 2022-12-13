@@ -1,0 +1,83 @@
+ 2- Part 1: https://medium.com/@sultanseymacanbaz/creational-patterns-1-singleton-ve-factory-method-3d6c85385648
+    Part 2: https://medium.com/@sultanseymacanbaz/creational-patterns-2-prototype-builder-ve-abstract-factory-method-c6521dc8e746
+
+ 4- 
+ => SPRING: Spring, J2EE uygulamaları geliştirmede kullanılan frameworklerden biridir. 1.0 Sürümü Mart 2003’te 
+    yayınlanan Spring, Java uygulamalarını çok kolay ve hızlı bir şekilde geliştirmeyi sağlayan açık kaynaklı 
+    bir Java platformudur. En popüler Java frameworklerinden olan Spring, modüler yapıda olması ve kolay 
+    kullanılabilirliği sayesinde binlerce geliştirici tarafından kullanılmaktadır.
+
+    Kod Örneği: https://github.com/Kodluyoruz-Java-Bootcamp/week-1-sseymacnbz/tree/master/week1_hw/src/_10
+
+
+ => JSF: Java Server Faces (JSF), web tabanlı kullanıcı arabirimlerinin geliştirme entegrasyonunu basitleştirmeyi 
+    amaçlayan Java tabanlı bir web framework'üdür. Kütüphanede yer alan bileşenlere ait özellikler kullanılarak sunucuda 
+    yer alan veri ve olay arasında bağlantı kurularak işlem yapılır.
+
+    JSF sayfalarının işlenmesi için web.xml ayarı ile FacesServlet tarafından yönetileceği belirtilir.
+    
+    Kod Örneği:
+	<h:form id="myForm" enctype="multipart/form-data">
+    		<h:messages />
+    		<p>First name: <h:inputText id="firstName" value="#{firstName}" required="true" /></p>
+    		<p>Last name: <h:inputText id="lastName" value="#{lastName}" /></p>
+    		<p>Password: <h:inputSecret id="password" value="#{password}" required="true" /></p>
+    		<p>Address: <h:inputTextarea id="address" value="#{address}" rows="5" cols="30" /></p>
+    		<p>Photo: <h:inputFile id="photo" value="#{photo}"/></p>
+    		<h:commandButton value="Submit" action="result"/>
+	</h:form>
+
+
+ => HIBERNATE: Veri tabanı temelli uygulamalar yapmak için tasarlanmıştır. Framework’ün en önemli özelliklerinden biri 
+    veri tabanlarını nesneler formunda temsil etmesidir. Bu nesneler herhangi bir SQL bilgisine sahip olmadan da yazılabilir. 
+    Bu sayede geliştiriciler ve programcılar zamandan kazanabilirler.
+
+    Kod Örneği: https://github.com/sseymacnbz/java2022_kodlama.io/tree/main/Week_5/HW_2/Devs/src/main/java/kodlama/io/Devs
+    Bu örnek hibernate entity ilişkileri içermektedir.
+
+
+=> HADOOP: Hadoop, sıradan sunucularda büyük verileri işlemek amacıyla kullanılan açık kaynak kodlu bir framework'tür.
+   Her türlü veri için devasa depolama, çok yüksek işlem gücü ve neredeyse sınırsız sayıda eşzamanlı görevleri yönetme 
+   yeteneği sağlar. Dağınık bir bilgi işlem ortamında büyük verileri verimli bir şekilde yönetmenizi ve işlemenizi mümkün kılar.
+
+
+ 
+ 5- Spring framework'ü şu design patternleri kullanmaktadır.
+    -- Singleton: Uygulama başına bir nesnenin yalnızca bir örneğinin var olmasını sağlayan bir pattern'dir .
+    -- Factory Method: İstenen nesneyi oluşturmak için soyut bir yönteme sahip bir fabrika sınıfını gerektirir.
+    -- Proxy Pattern: Proxy pattern'i bir nesnenin başka bir nesneye (veya hizmete) erişimi kontrol etmesine izin veren bir yöntemdir.
+    -- Template Method: Bazı eylemler için gerekli adımları tanımlayan, standart adımları uygulayan ve özelleştirilebilir adımları abstract olarak bırakan bir yöntemdir.
+
+
+ 6- SOA: Service Oriented Architecture yani Servis Odaklı Mimari veya Hizmet Odaklı Mimari; değiştirilmesi zor olan eski monolitik bağımsız uygulamalardan,
+    iş hedeflerine ulaşmak için birlikte çalışmak üzere birleştirilen yeniden kullanılabilir kurumsal bir yapıya geçiş için mimari bir yaklaşımdır.
+    SOA’nın temel amacı, büyük monolitik uygulamaları yeniden kullanılabilir ve birlikte çalışabilir bağımsız servislere ayrıştırmak ve 
+    standart protokoller üzerinden iletişim kurmalarını sağlamaktır. SOA farklı servisleri kullanan ya da sağlayan dağıtık bileşenlerin koleksiyonudur. 
+    Bu koleksiyonda servisi sağlayan ve tüketen bileşenler farklı uygulama dilleri ve platformları kullanabilir.
+
+    Web Service: Web servisler, istemci bilgisayar (client) tarafından gönderilen istekleri (request) yorumlayarak gönderilen isteğe göre istemciye yapısından
+    bulundurduğu bilgileri aktarmaktadır. Web servisler birçok alanda kullanılmaktadır. Örneğin; TCMB döviz kurlarını almak istersek kurumun vermiş olduğu
+    web servisten istediğimiz veriyi alıp işlemlerimizi yapabiliriz. Web servis kullanırken dikkat etmemiz gereken bir husus ise web servis yapısına 
+    uygun değerleri göndermemiz olmalıdır.
+
+   Rest ve HTTP Metodları: https://medium.com/@sultanseymacanbaz/rest-nedi%CC%87r-d1bc13758ca1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
